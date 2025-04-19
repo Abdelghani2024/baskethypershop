@@ -1,0 +1,97 @@
+<!-- السلة -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سلة المشتريات | متجر هايبر</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #0e1621;
+      color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: #1e293b;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 229, 255, 0.1);
+      width: 100%;
+      max-width: 600px;
+    }
+    h2 {
+      text-align: center;
+      color: #00e5ff;
+    }
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #333;
+    }
+    .cart-item span {
+      color: #fff;
+    }
+    .cart-item button {
+      background-color: #00e5ff;
+      color: #0e1621;
+      border: none;
+      border-radius: 8px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    .cart-item button:hover {
+      background-color: #00b3cc;
+    }
+    .total {
+      margin-top: 20px;
+      font-size: 1.2em;
+      text-align: center;
+      color: #fff;
+    }
+    .action-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .action-buttons button {
+      width: 48%;
+      padding: 12px;
+      background-color: #00e5ff;
+      color: #0e1621;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .action-buttons button:hover {
+      background-color: #00b3cc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>سلة المشتريات</h2>
+
+    <div id="cartItems">
+      <!-- قائمة المنتجات ستضاف هنا عبر الجافاسكربت -->
+    </div>
+
+    <div class="total">
+      <span>الإجمالي: <span id="totalPrice">0</span> دج</span>
+    </div>
+
+    <div class="action-buttons">
+      <button onclick="cancelOrder()">إلغاء الطلب</button>
+      <button onclick="confirmOrder()">تأكيد الطلب</button>
+    </div>
+  </div>
+</body>
+</html>
